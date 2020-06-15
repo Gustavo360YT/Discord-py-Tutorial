@@ -5,15 +5,7 @@ client = commands.Bot(command_prefix='!')
 
 @client.event
 async def on_ready():
-    print(f'Logged in as: {client.user.name}\n-----\nMy prefix is !')
-
-@client.event
-async def on_member_join(member):
-    print(f'{member} joined the server!')
-
-@client.event
-async def on_member_remove(member):
-    print(f'{member} left the server')
+    print(f'Bot is now online')
 
 @client.command(aliases=['p', 'q'])
 async def ping(ctx, arg=None):
